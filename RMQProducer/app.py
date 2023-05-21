@@ -31,7 +31,7 @@ async def main(loop, exchange_name, message):
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     asyncio.gather(
-        *[loop.run_until_complete(main(loop, 'TestExchange', 'Hello this is a new message')) for _ in range(10000)]
+        *[loop.run_until_complete(main(loop, 'TestExchange', 'Hello this is a new message')) for _ in range(2000)]
     )
 
     # loop = asyncio.get_event_loop()
